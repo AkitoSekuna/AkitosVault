@@ -1,9 +1,0 @@
-
-name: AkitosVault
-version: 21.2.0
-main: com.akito_sekuna.vault.Main
-api-version: '1.21'
-author: Akito_Sekuna
-description: Vault compatibility bridge for the Akitos plugin network. Delegates economy calls to AkitosCore.
-depend: [AkitosCore]
-softdepend: [Vault]
