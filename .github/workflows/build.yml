@@ -34,4 +34,4 @@ jobs:
           ls -R ~/.m2/repository/com/akito_sekuna/AkitosCore
 
       - name: Build AkitosVault
-        run: mvn -B clean package
+        run: mvn -B -o clean package
