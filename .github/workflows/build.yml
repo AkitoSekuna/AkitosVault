@@ -31,5 +31,10 @@ jobs:
       - name: Build and install AkitosCore
         run: mvn -B clean install -f AkitosCore/pom.xml
 
+      - name: Inspect local AkitosCore metadata
+        run: |
+          cat ~/.m2/repository/com/akito_sekuna/AkitosCore/maven-metadata-local.xml
+          ls -la ~/.m2/repository/com/akito_sekuna/AkitosCore/
+
       - name: Build AkitosVault
         run: mvn -B -U clean package
