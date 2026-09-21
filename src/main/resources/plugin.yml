@@ -1,6 +1,6 @@
 
 name: AkitosVault
-version: 21.2.0
+version: 21.2.1
 main: com.akito_sekuna.vault.Main
 api-version: '1.21'
 author: Akito_Sekuna

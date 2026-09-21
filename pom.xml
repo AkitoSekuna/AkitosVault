@@ -6,7 +6,7 @@
 
     <groupId>com.akito_sekuna</groupId>
     <artifactId>AkitosVault</artifactId>
-    <version>21.2.0</version>
+    <version>21.2.1</version>
 
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>com.akito_sekuna</groupId>
             <artifactId>AkitosCore</artifactId>
-            <version>21.2.6</version>
+            <version>[21.2.0,21.3.0)</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
