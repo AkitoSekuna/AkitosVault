@@ -61,7 +61,7 @@ public class Main extends JavaPlugin implements AkitosAddon {
             getLogger().warning("Install Vault if you need EssentialsX/LuckPerms economy integration.");
             return;
         }
-
+    
         economyProvider = new AkitosEconomyProvider(this);
         getServer().getServicesManager().register(
                 Economy.class,

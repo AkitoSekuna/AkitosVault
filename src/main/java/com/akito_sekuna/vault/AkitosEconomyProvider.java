@@ -1,6 +1,5 @@
 package com.akito_sekuna.vault;
 
-import com.akito_sekuna.core.api.EconomyResult;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.OfflinePlayer;
@@ -104,11 +103,8 @@ public class AkitosEconomyProvider implements Economy {
 
     @Override
     public EconomyResponse depositPlayer(OfflinePlayer player, double amount) {
-        EconomyResult result = plugin.getCoreAPI().getEconomy().give(player.getUniqueId(), amount);
-        if (result == EconomyResult.SUCCESS) {
-            return new EconomyResponse(amount, getBalance(player), EconomyResponse.ResponseType.SUCCESS, null);
-        }
-        return new EconomyResponse(0, getBalance(player), EconomyResponse.ResponseType.FAILURE, result.name());
+        plugin.getCoreAPI().getEconomy().give(player.getUniqueId(), amount);
+        return new EconomyResponse(amount, getBalance(player), EconomyResponse.ResponseType.SUCCESS, null);
     }
 
     @Override
