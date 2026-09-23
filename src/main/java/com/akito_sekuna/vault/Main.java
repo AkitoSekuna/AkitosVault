@@ -57,7 +57,7 @@ public class Main extends JavaPlugin implements AkitosAddon {
         com.akito_sekuna.core.Main.registerAddon(this);
 
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
-            getLogger().warning("Vault not found -- AkitosVault will not register an economy provider.");
+            getLogger().warning("Vault not found: AkitosVault will not register an economy provider.");
             getLogger().warning("Install Vault if you need EssentialsX/LuckPerms economy integration.");
             return;
         }
@@ -70,7 +70,7 @@ public class Main extends JavaPlugin implements AkitosAddon {
                 ServicePriority.Highest
         );
 
-        getLogger().info("AkitosVault v" + getPluginMeta().getVersion() + " enabled -- economy registered with Vault.");
+        getLogger().info("AkitosVault v" + getPluginMeta().getVersion() + " enabled: economy registered with Vault.");
     }
 
     @Override
